@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books | Future Horizons</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="reviews.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Willson Kenedy</h1>
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="books.html" class="active">Books</a>
+    <a href="contact.html">Contact</a>
+
+  </nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<section class="books-grid">
+
+  <!-- Book Card -->
+  <div class="book-card" data-book="echoes">
+    <h2 class="book-title">Future Horizons</h2>
+    <img src="image 1.png" alt="Neon Dreams Cover" class="book-cover">
+    <p class="excerpt">
+     "On the edge of tomorrow, the horizon holds both promise and peril.
+One journey will decide if the future is salvation… or destruction."
+    </p>
+
+    <div class="buy-links">
+      <a href="#">Amazon</a>
+      <a href="#">OkadaBooks</a>
+      <a href="#">Selar</a>
+    </div>
+
+    <!-- Rating & Review Form -->
+    <div class="rating">
+      <span class="star" data-value="1">☆</span>
+      <span class="star" data-value="2">☆</span>
+      <span class="star" data-value="3">☆</span>
+      <span class="star" data-value="4">☆</span>
+      <span class="star" data-value="5">☆</span>
+      <span class="avg-rating">0/5</span>
+    </div>
+
+    <form class="review-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="review" placeholder="Write your thoughts..." required></textarea>
+      <button onclick="saveReview()">Submit Review</button>
+    </form>
+
+    <div class="review-list"></div>
+  </div>
+
+  <!-- Add more books here with class="book-card" -->
+</section>
+
+<footer>
+  <p>&copy; 2026 Willson Kenedy. All rights reserved.</p>
+</footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
